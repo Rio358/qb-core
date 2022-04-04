@@ -564,9 +564,9 @@ function QBCore.Functions.GetVehicleProperties(vehicle)
             modTrimB = GetVehicleMod(vehicle, 44),
             modTank = GetVehicleMod(vehicle, 45),
             modWindows = GetVehicleMod(vehicle, 46),
-            modKit47 = GetVehicleMod(vehicle, 47),
+            modDoorR = GetVehicleMod(vehicle, 47),
             modLivery = modLivery,
-            modKit49 = GetVehicleMod(vehicle, 49),
+            modLightBar = GetVehicleMod(vehicle, 49),
             liveryRoof = GetVehicleRoofLivery(vehicle),
         }
     else
@@ -849,15 +849,15 @@ function QBCore.Functions.SetVehicleProperties(vehicle, props)
         if props.modWindows then
             SetVehicleMod(vehicle, 46, props.modWindows, false)
         end
-        if props.modKit47 then
-            SetVehicleMod(vehicle, 47, props.modKit47, false)
+        if props.modDoorR then
+            SetVehicleMod(vehicle, 47, props.modDoorR, false)
         end
         if props.modLivery then
             SetVehicleMod(vehicle, 48, props.modLivery, false)
             SetVehicleLivery(vehicle, props.modLivery)
         end
-        if props.modKit49 then
-            SetVehicleMod(vehicle, 49, props.modKit49, false)
+        if props.modLightBar then
+            SetVehicleMod(vehicle, 49, props.modLightBar, false)
         end
         if props.liveryRoof then
             SetVehicleRoofLivery(vehicle, props.liveryRoof)
