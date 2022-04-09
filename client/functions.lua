@@ -532,11 +532,11 @@ function QBCore.Functions.GetVehicleProperties(vehicle)
             modHorns = GetVehicleMod(vehicle, 14),
             modSuspension = GetVehicleMod(vehicle, 15),
             modArmor = GetVehicleMod(vehicle, 16),
-            modKit17 = GetVehicleMod(vehicle, 17),
+            modNitrous = GetVehicleMod(vehicle, 17),
             modTurbo = IsToggleModOn(vehicle, 18),
-            modKit19 = GetVehicleMod(vehicle, 19),
+            modSubwoofer = GetVehicleMod(vehicle, 19),
             modSmokeEnabled = IsToggleModOn(vehicle, 20),
-            modKit21 = GetVehicleMod(vehicle, 21),
+            modHydraulics = GetVehicleMod(vehicle, 21),
             modXenon = IsToggleModOn(vehicle, 22),
             modFrontWheels = GetVehicleMod(vehicle, 23),
             modBackWheels = GetVehicleMod(vehicle, 24),
@@ -750,20 +750,20 @@ function QBCore.Functions.SetVehicleProperties(vehicle, props)
         if props.modArmor then
             SetVehicleMod(vehicle, 16, props.modArmor, false)
         end
-        if props.modKit17 then
-            SetVehicleMod(vehicle, 17, props.modKit17, false)
+        if props.modNitrous then
+            SetVehicleMod(vehicle, 17, props.modNitrous, false)
         end
         if props.modTurbo then
             ToggleVehicleMod(vehicle, 18, props.modTurbo)
         end
-        if props.modKit19 then
-            SetVehicleMod(vehicle, 19, props.modKit19, false)
+        if props.modSubwoofer then
+            SetVehicleMod(vehicle, 19, props.modSubwoofer, false)
         end
         if props.modSmokeEnabled then
             ToggleVehicleMod(vehicle, 20, props.modSmokeEnabled)
         end
-        if props.modKit21 then
-            SetVehicleMod(vehicle, 21, props.modKit21, false)
+        if props.modHydraulics then
+            SetVehicleMod(vehicle, 21, props.modHydraulics, false)
         end
         if props.modXenon then
             ToggleVehicleMod(vehicle, 22, props.modXenon)
